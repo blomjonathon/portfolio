@@ -1,0 +1,256 @@
+*{ 
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: black;
+}
+h1{
+    font-size: 34px;
+}
+h2{
+    font-size: 30px;
+}
+h3{
+    font-size: 24px;
+}
+h4{
+    font-size: 20px;
+}
+h5{
+    font-size: 18px;
+}
+h6{
+    font-size: 16px;
+}
+p{
+    font-size: 14px;
+}
+ul,ol{
+    list-style-type:none;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: lightgray;
+    height: 70px;
+}
+nav img{
+    height: 65px;
+    width: 60px;
+    border-radius: 100px 100px;
+    margin: 5px 0px 0px 10px
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin: 0px 100px 0px 0px;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    opacity: .5;
+}
+.firstHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:800px;
+    width: 100%;
+    color: white;
+}
+header h1{
+    padding-bottom: 40px;
+}
+.about {
+    height: 400px;
+    width: 100%;
+    background-color: darkgray;
+}
+.about article{
+    width: 400px;
+    padding-top: 40px;
+    margin-left: 60px;
+}
+.about h2{
+    padding-bottom: 40px;
+}
+.about p{
+    font-size: 18px;
+}
+.projectsHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    color: white;
+}
+.projectCards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 800px;
+    padding-top: 40px;
+    color: white;
+}
+.projectCards section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 250px;
+    padding-right: 100px;
+    padding-left: 100px;
+    color: white;
+}
+.projectCards section h3{
+    padding-bottom: 10px;
+}
+#resize{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+    width: 350px;
+}
+.projectCards section img{
+    height: 200px;
+    width: 200px;
+    border-radius: 25px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    height: 200px;
+}
+footer section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer h4{
+    padding-bottom: 10px;
+}
+
+/* tablet 768px */
+
+@media only screen and (max-width: 768px) {
+    nav { 
+        display: flex;
+        justify-content: space-evenly;
+    }
+    nav ul{
+        margin: 0px 234px 0px 234px;
+    }
+    nav img{
+        display: none;
+    }
+    .firstHeader{
+        height: 600px;
+    }
+    .about{
+        display: flex;
+        justify-content: center;
+    }
+    .about article{
+        margin-left: 0px;
+    }
+    .about h2, p{
+        text-align: center;
+    }
+    .projectCards{
+        height: 1000px;
+    }
+    .projectCards section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        width: 150px;
+        padding: 50px 50px 50px 50px;
+        color: white;
+    }
+    #firstChild{
+        height: 300px;
+        width: 300px;
+        margin: 0px 234px;
+        }
+    #calc{
+        margin-left: 134px;
+    }
+    #taskMan{
+        margin-right: 134px;
+    }
+    #middleSoonImg{
+        margin-right: 15px;
+    }
+    #lastSoonImg{
+        margin-right: 50px;
+    }
+  }
+/* mobile 320px */
+
+@media only screen and (max-width: 320px) {
+    nav {
+        display: none;
+    }
+    .firstHeader{
+        text-align: center;
+    }
+    .about{
+        height: 450px;
+    }
+    .about article{
+        width: 200px;
+        padding-left: 0px;
+        margin-left: 0px;
+        padding-top: 40px;
+    }
+    .about h2{
+        padding-bottom: 40px;
+    }
+    .about p{
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    .projectsHeader{
+        padding-bottom: 0px;
+    }
+    .projectCards{
+        padding-bottom: 0px;
+    }
+    .projectCards section h3{
+        text-align: center;
+    }
+    .projectCards section:nth-last-child(-n+3) {
+        display: none;
+    }
+    #resize{
+        height: 200px;
+        width: 250px;
+    }
+    #taskMan a img, #calc a img{
+        height: 150px;
+        width: 150px;
+    }
+    #calc{
+        margin-left: 10px;
+    }
+    #taskMan{
+        margin-right: 10px;
+    }
+}
